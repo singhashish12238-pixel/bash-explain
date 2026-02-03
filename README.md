@@ -16,4 +16,7 @@ in simple language with examples.
 - permissions
 
 ## Author
-Ashish
+Ashish Singh
+Ravi Poddar
+
+
