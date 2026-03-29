@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of BashExplain
 - Command explanation feature
-  - Support for 50+ common commands (ls, cd, grep, git, docker, etc.)
+  - Support for 60+ common commands (ls, cd, grep, git, docker, etc.)
   - Flag and argument parsing
   - Detection of pipes and redirections
   - Identification of file paths, variables, and patterns
@@ -25,22 +25,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Function and control flow detection
   - Comment and shebang recognition
 - Safety warnings system
-  - Detection of dangerous commands (rm -rf /, chmod 777, etc.)
-  - Warnings for executing untrusted scripts
+  - Detection of 24+ dangerous command patterns
+  - Warnings for executing untrusted scripts (curl | bash)
   - Caution notices for sudo usage
-- CLI interface with three modes: command, error, script
+  - Fork bomb detection
+- CLI interface with three modes: `command`, `error`, `script`
 - Comprehensive documentation
   - README with installation and usage
   - Quick start guide
   - Examples document
   - Contributing guidelines
-- Test suite for validation
+  - Project structure overview
+- Test suite (`test_bashexplain.py`) with 12+ test cases
+- Sample script (`sample_backup.sh`) for script mode demo
 - MIT License
-- No external dependencies (pure Python)
+- No external dependencies (pure Python 3.6+)
 - Offline-first operation
+- Published to PyPI: `pip install bashexplain`
 
 ### Security
-- No command execution - read-only analysis
+- No command execution — read-only analysis only
 - No root/sudo requirements
 - No data collection or telemetry
 
@@ -56,34 +60,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for other shells (zsh, fish)
 - Plugin system for custom explanations
 - Web interface
-- IDE/editor integrations
-  - VSCode extension
-  - Vim plugin
-  - Emacs mode
+- IDE/editor integrations (VSCode extension, Vim plugin)
 - Multilingual support
-  - Spanish
-  - French
-  - German
-  - Simplified Chinese
 - Man page integration
 - Colorized output with themes
-- Export explanations to various formats (HTML, PDF, Markdown)
-- History tracking of explained commands
-- Learning path recommendations
-- Quiz mode for testing knowledge
-- Integration with package managers
-  - pip install bashexplain
-  - apt install bashexplain
-  - homebrew formula
-
-### Improvements Planned
-- Better regex patterns for error detection
-- More detailed flag explanations per command
-- Context-aware suggestions
-- Performance optimizations
-- Enhanced safety warnings
-- Better handling of command substitution
-- Improved pipe chain visualization
+- Export explanations to HTML, PDF, Markdown
 
 ---
 
@@ -91,10 +72,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **1.0.0** (2026-03-25) - Initial Release
   - Core functionality: command, error, and script explanation
-  - Safety warnings
-  - 50+ commands, 10+ error patterns
+  - Safety warnings (24+ patterns)
+  - 60+ commands, 10+ error patterns
   - Pure Python, no dependencies
-  - Comprehensive documentation
+  - Published on PyPI
 
 ---
 
