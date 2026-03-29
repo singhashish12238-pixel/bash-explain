@@ -4,49 +4,32 @@ Get up and running with BashExplain in 2 minutes!
 
 ## Installation
 
-### Option 1: Quick Download (Recommended for trying it out)
+### Option 1: Install from PyPI (Recommended)
+
+```bash
+# Using pipx (best for CLI tools)
+pipx install bashexplain
+
+# Or using pip
+pip install bashexplain
+```
+
+### Option 2: Quick Download (No install needed)
 
 ```bash
 # Download the script
 curl -O https://raw.githubusercontent.com/singhashish12238-pixel/bash-explain/main/bash_explain.py
 
-# Make it executable
-chmod +x bash_explain.py
-
 # Try it out!
-./bash_explain.py command "ls -la"
+python3 bash_explain.py command "ls -la"
 ```
 
-### Option 2: Clone Repository (Recommended for contributors)
+### Option 3: Clone Repository (For contributors)
 
 ```bash
-# Clone the repository
 git clone https://github.com/singhashish12238-pixel/bash-explain.git
 cd bash-explain
-
-# Make it executable
-chmod +x bash_explain.py
-
-# Try it out!
-./bash_explain.py command "ls -la"
-```
-
-### Option 3: Install System-Wide
-
-```bash
-# Clone the repository
-git clone https://github.com/singhashish12238-pixel/bash-explain.git
-cd bash-explain
-
-# Option A: Install using pip
-pip install -e .
-
-# Option B: On Python 3.12+ (Debian/Ubuntu), use pipx to avoid
-# "externally managed environment" errors — recommended for CLI tools
 pipx install .
-
-# Now you can use it from anywhere!
-bashexplain command "ls -la"
 ```
 
 ## Basic Usage
@@ -163,23 +146,4 @@ tar -czf backup.tar.gz ~/documents
 - Check the [GitHub Issues](https://github.com/singhashish12238-pixel/bash-explain/issues)
 - Read the [full documentation](README.md)
 
-## What's Next?
-
-Try explaining commands you use every day to deepen your understanding!
-
-```bash
-# Your daily git workflow
-bashexplain command "git add ."
-bashexplain command "git commit -m 'Update docs'"
-bashexplain command "git push origin main"
-
-# Your deployment commands
-bashexplain command "ssh user@server"
-bashexplain command "scp file.txt user@server:/path"
-
-# Your development workflow
-bashexplain command "npm install"
-bashexplain command "pytest tests/"
-```
-
-Happy learning! 
+Happy learning! 🚀
