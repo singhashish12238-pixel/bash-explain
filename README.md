@@ -137,6 +137,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Acknowledgements
 
-Some commands, flag descriptions, and error patterns in this project were developed 
-with assistance from Claude (Anthropic) and GitHub Copilot. All code has been reviewed, 
+Some commands, flag descriptions, and error patterns in this project were refined 
+with assistance from Claude. All code has been reviewed, 
 tested, and understood by the authors.
