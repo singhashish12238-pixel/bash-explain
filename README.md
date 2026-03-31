@@ -134,3 +134,9 @@ Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+## Acknowledgements
+
+Some commands, flag descriptions, and error patterns in this project were developed 
+with assistance from Claude (Anthropic) and GitHub Copilot. All code has been reviewed, 
+tested, and understood by the authors.
